@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="basketball.css">
+    </head>
+    <body>
+        <div class="scoreboard-wrapper">
+            <div class="container">
+                <div class="team-card" id="home-card">
+                    <h3>HOME</h3>
+                    <div class="screen">
+                        <div class="score" id="home-score">0</div>
+                    </div>
+                    <div class="btn-group">
+                        <button onclick="addHome(1)">+1</button>
+                        <button onclick="addHome(2)">+2</button>
+                        <button onclick="addHome(3)">+3</button>
+                    </div>
+                </div>
+                
+                <div class="team-card" id="guest-card">
+                    <h3>GUEST</h3>
+                    <div class="screen">
+                        <div class="score" id="guest-score">0</div>
+                    </div>
+                    <div class="btn-group">
+                        <button onclick="addGuest(1)">+1</button>
+                        <button onclick="addGuest(2)">+2</button>
+                        <button onclick="addGuest(3)">+3</button>
+                    </div>
+                </div>
+
+                <button id="reset-btn" onclick="resetGame()">NEW GAME</button>
+            </div>
+
+        </div>
+        
+        <script src="basketball.js"></script>
+    </body>
+</html>
